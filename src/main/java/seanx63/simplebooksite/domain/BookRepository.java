@@ -1,4 +1,4 @@
-package seanx63.SimpleBookSite.Domain;
+package seanx63.simplebooksite.domain;
 
 import org.springframework.data.repository.CrudRepository;
 

@@ -1,4 +1,4 @@
-package seanx63.SimpleBookSite;
+package seanx63.simplebooksite;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

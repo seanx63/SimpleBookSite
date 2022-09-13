@@ -1,4 +1,4 @@
-package seanx63.SimpleBookSite.Domain;
+package seanx63.simplebooksite.domain;
 
 import javax.persistence.*;
 
@@ -9,16 +9,16 @@ public class Book {
     private long id;
     @Column(name = "ISBN")
     private String isbn;
-    @Column(name = "ISBN-13")
+    @Column(name = "ISBN13")
     private String isbn13;
     private String author, name, publisher, ddname; // ddname = dewey decimal name
-    private short year;
-    private float ddc; // dewey decimal classification
+    private int year;
+    private int ddc; // dewey decimal classification
 
     public Book() {
     }
 
-    public Book(String isbn, String isbn13, String author, String name, String publisher, String ddname, short year, float ddc) {
+    public Book(String isbn, String isbn13, String author, String name, String publisher, String ddname, short year, int ddc) {
         this.isbn = isbn;
         this.isbn13 = isbn13;
         this.author = author;
@@ -38,19 +38,19 @@ public class Book {
         this.id = id;
     }
 
-    public short getYear() {
+    public int getYear() {
         return year;
     }
 
-    public void setYear(short year) {
+    public void setYear(int year) {
         this.year = year;
     }
 
-    public float getDdc() {
+    public int getDdc() {
         return ddc;
     }
 
-    public void setDdc(float ddc) {
+    public void setDdc(int ddc) {
         this.ddc = ddc;
     }
 
