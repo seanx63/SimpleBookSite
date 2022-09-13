@@ -7,10 +7,13 @@ public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-    @Column(nullable = false)
-    private String isbn, isbn13, author, name, publisher, ddname; // ddname = dewey decimal name
-    @Column(nullable = false)
-    private int year, ddc; // dewey decimal classification
+    @Column(name = "ISBN")
+    private String isbn;
+    @Column(name = "ISBN13")
+    private String isbn13;
+    private String author, name, publisher, ddname; // ddname = dewey decimal name
+    private int year;
+    private int ddc; // dewey decimal classification
 
     public Book() {
     }
